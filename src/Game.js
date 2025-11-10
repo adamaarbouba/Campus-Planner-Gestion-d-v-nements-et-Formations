@@ -19,13 +19,13 @@ function channge() {
     Ten.innerHTML = Tentatives;
 }
 
-function checkLetter(L, b) {
-    b.disabled = true;
+function checkLetter(btn) {
+    btn.disabled = true;
     let correct = false;
 
     for (let i = 0; i < currentWord.length; i++) {
-        if (currentWord[i] === L) {
-            foundWord[i] = L;
+        if (currentWord[i] === btn.textContent) {
+            foundWord[i] = btn.textContent;
             correct = true;
         }
     }
@@ -50,7 +50,7 @@ function checkLetter(L, b) {
 
 buttons.forEach(btn => {
     btn.addEventListener("click", () => {
-        checkLetter(btn.textContent, btn);
+        checkLetter(btn);
     });
 });
 
