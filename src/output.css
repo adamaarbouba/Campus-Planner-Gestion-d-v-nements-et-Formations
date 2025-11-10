@@ -191,35 +191,14 @@
   .grid {
     display: grid;
   }
-  .table {
-    display: table;
-  }
-  .h-2 {
-    height: calc(var(--spacing) * 2);
-  }
-  .h-5 {
-    height: calc(var(--spacing) * 5);
-  }
   .h-14 {
     height: calc(var(--spacing) * 14);
   }
   .h-screen {
     height: 100vh;
   }
-  .w-2 {
-    width: calc(var(--spacing) * 2);
-  }
-  .w-4 {
-    width: calc(var(--spacing) * 4);
-  }
   .w-4\/5 {
     width: calc(4/5 * 100%);
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -239,10 +218,6 @@
   .rounded-lg {
     border-radius: var(--radius-lg);
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
@@ -252,9 +227,6 @@
   }
   .bg-\[\#222831\] {
     background-color: #222831;
-  }
-  .bg-amber-800 {
-    background-color: var(--color-amber-800);
   }
   .bg-linear-120 {
     --tw-gradient-position: 120deg;
@@ -282,9 +254,6 @@
     --tw-gradient-to: #00a6c0;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
-  .py-2 {
-    padding-block: calc(var(--spacing) * 2);
-  }
   .py-2\.5 {
     padding-block: calc(var(--spacing) * 2.5);
   }
@@ -311,42 +280,14 @@
     --tw-tracking: 0.4em;
     letter-spacing: 0.4em;
   }
-  .text-\[\#0c262f\] {
-    color: #0c262f;
-  }
   .text-\[\#00a6c0\] {
     color: #00a6c0;
-  }
-  .text-\[\#1f6fe6\] {
-    color: #1f6fe6;
   }
   .text-\[\#283b48\] {
     color: #283b48;
   }
-  .text-\[\#303a3b\] {
-    color: #303a3b;
-  }
-  .text-\[\#393c3d\] {
-    color: #393c3d;
-  }
-  .text-\[\#222831\] {
-    color: #222831;
-  }
-  .text-\[\#300642\] {
-    color: #300642;
-  }
-  .text-\[\#aa1fe6\] {
-    color: #aa1fe6;
-  }
   .text-\[\#d8d7ce\] {
     color: #d8d7ce;
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
 }
 .btn {
@@ -445,11 +386,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -484,7 +420,6 @@
       --tw-gradient-to-position: 100%;
       --tw-font-weight: initial;
       --tw-tracking: initial;
-      --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-scale-x: 1;
       --tw-scale-y: 1;
