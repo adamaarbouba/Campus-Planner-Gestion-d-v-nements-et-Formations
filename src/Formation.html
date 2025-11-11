@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Codewave</title>
+</head>
+
+<body class="bg-[#222831] text-[#D8D7CE]">
+
+  <header class="bg-[#283B48] text-[#D8D7CE] p-4 flex justify-between items-center relative">
+    <h1 class="text-2xl font-bold text-[#00A6C0]">Codewave</h1>
+    <button id="menu-btn" class="sm:hidden flex flex-col space-y-1">
+      <span class="block w-6 h-0.5 bg-[#D8D7CE]"></span>
+      <span class="block w-6 h-0.5 bg-[#D8D7CE]"></span>
+      <span class="block w-6 h-0.5 bg-[#D8D7CE]"></span>
+    </button>
+    <nav id="menu"
+      class="hidden sm:block absolute sm:static top-full left-0 w-full sm:w-auto bg-[#283B48] sm:bg-transparent">
+      <ul class="flex flex-col sm:flex-row sm:space-x-6 space-y-2 sm:space-y-0 p-4 sm:p-0 text-center sm:text-left">
+        <li><a href="Homepage.html" class="hover:text-[#00A6C0]">Home</a></li>
+        <li><a href="Formation.html" class="hover:text-[#00A6C0]">Formation</a></li>
+        <li><a href="Event.html" class="hover:text-[#00A6C0]">Event</a></li>
+        <li><a href="Game.html" class="hover:text-[#00A6C0]">Game</a></li>
+        <li><a href="Admin-Dashboard.html" class="hover:text-[#00A6C0]">Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+    <main class="container mx-auto py-10 px-6">
+        <h2 class="text-4xl font-bold text-[#00A6C0] mb-6 text-center">Available Formations</h2>
+        <div id="formation-list"></div>
+    </main>
+  <footer class="bg-[#283B48] text-[#D8D7CE] p-8 flex flex-col md:flex-row justify-around items-start">
+    <div class="mb-6 md:mb-0 ">
+      <a href="Homepage.html" class="text-2xl sm:text-5xl font-bold text-[#00A6C0] hover:opacity-90">Codewave</a>
+    </div>
+    <div id="footer-links">
+      <h4 class="text-xl mb-3 text-[#00A6C0]">Pages</h4>
+      <ul class="space-y-2">
+        <li><a href="Homepage.html" class="hover:text-[#00A6C0]">Home</a></li>
+        <li><a href="Formation.html" class="hover:text-[#00A6C0]">Formation</a></li>
+        <li><a href="Event.html" class="hover:text-[#00A6C0]">Event</a></li>
+        <li><a href="Contact.html" class="hover:text-[#00A6C0]">Contact Us</a></li>
+      </ul>
+    </div>
+  </footer>
+    <script src="Index.js"></script>
+
+</body>
+
+</html>

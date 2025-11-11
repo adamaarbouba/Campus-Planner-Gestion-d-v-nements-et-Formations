@@ -2,4 +2,4 @@
 
 .btn{
     @apply cursor-pointer bg-[#283b48] text-[#d8d7ce] py-2 rounded-lg text-2xl hover:bg-[#00a6c0] hover:text-[#222831] hover:scale-110 transition-all duration-300 disabled:bg-[#222831] disabled:text-gray-500 disabled:cursor-not-allowed;
-  }
+}
