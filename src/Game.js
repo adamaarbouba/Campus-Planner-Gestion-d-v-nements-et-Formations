@@ -1,9 +1,10 @@
 let score = 0;
-let Tentatives = 5;
+let Tentatives;
 
 const inputfound = document.getElementById("found");
 const scoreDisplay = document.getElementById("score");
 const Ten = document.getElementById("Tentatives");
+const bob = document.getElementById("b")
 const buttons = document.querySelectorAll(".btn");
 
 const words = ["html", "ibangris", "ilyas"];
@@ -12,10 +13,13 @@ let foundWord = [];
 
 
 function channge() {
+    console.log("dfghjkg");
     currentWord = words[Math.floor(Math.random() * words.length)];
     foundWord = Array(currentWord.length).fill("_");
     inputfound.value = foundWord.join(" ");
     buttons.forEach(btn => btn.disabled = false);
+    Tentatives = 5;
+    bob.innerHTML = " "
     Ten.innerHTML = Tentatives;
 }
 
@@ -39,6 +43,7 @@ function checkLetter(btn) {
         Ten.innerHTML = --Tentatives;
         if (Tentatives === 0) {
             scoreDisplay.innerHTML = `<h2>Game Over</h2>`;
+            bob.innerHTML = `<button class="btn border-2 border-[#00a6c0] p-2" onClick="channge()">Recomencer</button>`
             buttons.forEach(btn => btn.disabled = true);    
         }
     }
