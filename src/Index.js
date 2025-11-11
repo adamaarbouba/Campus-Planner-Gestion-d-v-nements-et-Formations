@@ -5,8 +5,18 @@ const menu = document.getElementById("menu");
 //   menu.classList.toggle("hidden");
 // });
 
+
+fetch('../data/formation.json')
+.then(Res => Res.json())
+.then(data => {
+    data.forEach(formation => {
+      
+      const them = formation.theme
+    })
+} )
+
 const FormationAdminCard = `<section class="w-[80%] ml-[10%] mt-[5%] h-[250px] grid justify-center rounded-lg border-2 border-[#00A6C0] md:w-[45%] md:ml-[2%] lg:w-[90%]">
-  <h3 class="text-2xl font-semibold text-[#00A6C0] mb-2 text-center mt-[5%]">{theme}</h3>
+  <h3 class="text-2xl font-semibold text-[#00A6C0] mb-2 text-center mt-[5%]">{formation.Theme}</h3>
   <p><strong>Trainer : </strong> <span class="trainerr">{Trainer}</span></p>
   <p><strong>Duration : </strong><span class="Durationn">{Duration} </span> Mois</p>
   <p><strong>Capacity : </strong> <span class="capacity">{Capacity}</span> poeple</p>
@@ -18,9 +28,3 @@ const FormationAdminCard = `<section class="w-[80%] ml-[10%] mt-[5%] h-[250px] g
   </div>
   <p class="mt-2"></p>
 </section>`;
-
- fetch('../data/formation.json')
-    .then(Res => Res.json())
-    .then(data => {
-      
-    } )
