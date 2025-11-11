@@ -14,13 +14,15 @@
 
 <body class="bg-[#222831] text-[#D8D7CE]">
 
-  <header class="bg-[#283B48] text-[#D8D7CE] p-4 flex justify-between items-center relative">
+  <header class="z-10 bg-[#283B48] text-[#D8D7CE] p-4 flex justify-between items-center relative">
     <h1 class="text-2xl font-bold text-[#00A6C0]">Codewave</h1>
+
     <button id="menu-btn" class="sm:hidden flex flex-col space-y-1">
       <span class="block w-6 h-0.5 bg-[#D8D7CE]"></span>
       <span class="block w-6 h-0.5 bg-[#D8D7CE]"></span>
       <span class="block w-6 h-0.5 bg-[#D8D7CE]"></span>
     </button>
+
     <nav id="menu"
       class="hidden sm:block absolute sm:static top-full left-0 w-full sm:w-auto bg-[#283B48] sm:bg-transparent">
       <ul class="flex flex-col sm:flex-row sm:space-x-6 space-y-2 sm:space-y-0 p-4 sm:p-0 text-center sm:text-left">
@@ -28,17 +30,19 @@
         <li><a href="Formation.html" class="hover:text-[#00A6C0]">Formation</a></li>
         <li><a href="Event.html" class="hover:text-[#00A6C0]">Event</a></li>
         <li><a href="Game.html" class="hover:text-[#00A6C0]">Game</a></li>
-        <li><a href="Admin-Dashboard.html" class="hover:text-[#00A6C0]">Admin</a></li>
+        <li><a id="Admin-login" class="hover:text-[#00A6C0]">Admin</a></li>
       </ul>
     </nav>
+
   </header>
   <section
     class="relative h-screen flex flex-col justify-center items-center text-center text-[#222831] overflow-hidden">
     <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('public/campus image.jpg');">
     </div>
-    <div class="absolute inset-0 bg-gradient-to-t from-[#222831]/100 via-[#00A6C0]/50 to-transparent"></div>
+    <div class="absolute inset-0 bg-linear-to-t from-[#222831] via-[#00A6C0]/50 to-transparent"></div>
     <div class="relative z-10 px-6">
-      <h2 id="Page-Header" class="text-[4rem] text-[#222831] font-bold mb-4 font-[Nova_Round]">Welcome to Codewave</h2>
+      <h2 id="Page-Header" class="animate-pulse text-[4rem] text-[#222831] font-bold mb-4 font-[Nova_Round]">Welcome to
+        Codewave</h2>
       <p class="text-[2rem] text-[#d7d8ce] font-[Belanosima] max-w-2xl mx-auto">
         Empowering the next generation of developers through collaboration and innovation.
       </p>
@@ -48,7 +52,7 @@
     <section class="py-16 text-center ">
       <h3 class="text-3xl font-semibold mb-8 text-[#00A6C0]">Our Programs</h3>
       <div class="grid md:grid-cols-2 gap-10">
-        <div class="bg-[#283B48] p-6 rounded-lg shadow-md hover:shadow-lg transition">
+        <div class="animate-bounce bg-[#283B48] p-6 rounded-lg shadow-md hover:shadow-lg transition">
           <span class="relative flex size-3">
             <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75"></span>
             <span class="relative inline-flex size-3 rounded-full bg-sky-500"></span>
@@ -56,7 +60,7 @@
           <h4 class="text-xl font-semibold mb-3 text-[#00A6C0]">Formation</h4>
           <p class="font-[Belanosima]">Structured programs to develop your coding skills from beginner to expert.</p>
         </div>
-        <div class="bg-[#283B48] p-6 rounded-lg shadow-md hover:shadow-lg transition">
+        <div class="animate-bounce bg-[#283B48] p-6 rounded-lg shadow-md hover:shadow-lg transition">
           <span class="relative flex size-3">
             <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75"></span>
             <span class="relative inline-flex size-3 rounded-full bg-sky-500"></span>
@@ -66,14 +70,23 @@
         </div>
       </div>
     </section>
+    <section class="py-16 text-center ">
+      <h3 class="text-3xl font-semibold mb-8 text-[#00A6C0]">Latest Formation</h3>
+      <div id="formation-list"></div>
+    </section>
+    <section class="py-16 text-center ">
+      <h3 class="text-3xl font-semibold mb-8 text-[#00A6C0]">Ongoing Events</h3>
+      <div id="event-list">
+      </div>
+    </section>
   </main>
   <section
     class="relative h-[80vh] flex flex-col justify-center items-center text-center text-[#D8D7CE] rounded-lg overflow-hidden">
     <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('public/School libriry.jpg');"></div>
-    <div class="absolute inset-0 bg-gradient-to-t from-[#283B48]/100 via-transparent to-[#283B48]/99"></div>
+    <div class="absolute inset-0 bg-linear-to-t from-[#283B48] via-transparent to-[#283B48]/99"></div>
 
     <div class="relative z-10 px-6 bg-[#283B48]/70 rounded-4xl p-8">
-      <h3 class="text-[4rem] font-[Nova_Round] mb-4 text-[#00A6C0]">About Us</h3>
+      <h3 class="animate-pulse text-[4rem] font-[Nova_Round] mb-4 text-[#00A6C0]">About Us</h3>
       <p class="max-w-2xl mx-auto font-[Belanosima] text-[2rem]">
         At Codewave, we’re passionate about building a vibrant tech community where learners and professionals grow
         together.
