@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link href="output.css" rel="stylesheet">
+</head>
+
+<body class="overflow-hidden">
+  <header class="bg-[#283B48] text-[#D8D7CE] p-4 flex justify-between items-center relative">
+    <h1 class="text-2xl font-bold text-[#00A6C0]">Codewave</h1>
+    <button id="menu-btn" class="sm:hidden flex flex-col space-y-1">
+      <span class="block w-6 h-0.5 bg-[#D8D7CE]"></span>
+      <span class="block w-6 h-0.5 bg-[#D8D7CE]"></span>
+      <span class="block w-6 h-0.5 bg-[#D8D7CE]"></span>
+    </button>
+    <nav id="menu"
+      class="hidden sm:block absolute sm:static top-full left-0 w-full sm:w-auto bg-[#283B48] sm:bg-transparent">
+      <ul class="flex flex-col sm:flex-row sm:space-x-6 space-y-2 sm:space-y-0 p-4 sm:p-0 text-center sm:text-left">
+        <li><a href="Homepage.html" class="hover:text-[#00A6C0]">Home</a></li>
+        <li><a href="Formation.html" class="hover:text-[#00A6C0]">Formation</a></li>
+        <li><a href="Event.html" class="hover:text-[#00A6C0]">Event</a></li>
+        <li><a href="Game.html" class="hover:text-[#00A6C0]">Game</a></li>
+        <li><a href="Admin-Dashboard.html" class="hover:text-[#00A6C0]">Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+        <div class="Founddiv h-screen bg-linear-135 from-[#283b48] to-[#222831]">
+            <div class="flex justify-center">
+                <input type="text" id="found" class="bg-[#222831] border-2 border-[#00a6c0] rounded-lg text-[#d8d7ce] text-center text-lg tracking-[0.4em] py-2.5 mt-4 w-4/5 " readonly>
+            </div>
+            <div class="flex justify-around">
+                <p class="text-[#d8d7ce] text-2xl mt-4">Score : <span id="score" class="text-[#00a6c0] font-bold">0</span></p>
+                
+            <p class="text-[#d8d7ce] text-2xl mt-4">Tentatives : <span id="Tentatives" class="text-[#00a6c0] font-bold"></span></p>
+            </div>
+        <div class="clavie  mt-6">
+            <div class="butto grid grid-cols-6 gap-3">
+                <button class="btn">a</button>
+                <button class="btn">b</button>
+                <button class="btn">c</button>
+                <button class="btn">d</button>
+                <button class="btn">e</button>
+                <button class="btn">f</button>
+                <button class="btn">g</button>
+                <button class="btn">h</button>
+                <button class="btn">i</button>
+                <button class="btn">j</button>
+                <button class="btn">k</button>
+                <button class="btn">l</button>
+                <button class="btn">m</button>
+                <button class="btn">n</button>
+                <button class="btn">o</button>
+                <button class="btn">p</button>
+                <button class="btn">q</button>
+                <button class="btn">r</button>
+                <button class="btn">s</button>
+                <button class="btn">t</button>
+                <button class="btn">u</button>
+                <button class="btn">v</button>
+                <button class="btn">w</button>
+                <button class="btn">x</button>
+                <button class="btn">y</button>
+                <button class="btn">z</button>
+                <span id="b" class="text-9xl mt-4 text-[#00a6c0] font-bold"></span>
+            </div>
+    </main>
+        <script src="Game.js"></script>
+        <script src="Index.js"></script>
+</body>
+
+</html>
