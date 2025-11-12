@@ -18,8 +18,10 @@ function channge() {
     foundWord = Array(currentWord.length).fill("_");
     inputfound.value = foundWord.join(" ");
     buttons.forEach(btn => btn.disabled = false);
+    score = 0;
     Tentatives = 5;
     bob.innerHTML = " "
+    scoreDisplay.innerHTML = score;
     Ten.innerHTML = Tentatives;
 }
 
