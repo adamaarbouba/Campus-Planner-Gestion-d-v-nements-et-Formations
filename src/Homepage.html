@@ -5,6 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="./output.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Nova+Round&display=swap"
+    rel="stylesheet">
   <title>Codewave</title>
 </head>
 
@@ -28,34 +32,57 @@
       </ul>
     </nav>
   </header>
-  <main class="container mx-auto py-10 px-6">
-    <section class="py-16 text-center bg-[#00A6C0] text-[#222831] rounded-lg shadow-md">
-      <h2 class="text-4xl font-bold mb-4">Welcome to Codewave</h2>
-      <p class="text-lg max-w-2xl mx-auto">
+  <section
+    class="relative h-screen flex flex-col justify-center items-center text-center text-[#222831] overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('public/campus image.jpg');">
+    </div>
+    <div class="absolute inset-0 bg-gradient-to-t from-[#222831]/100 via-[#00A6C0]/50 to-transparent"></div>
+    <div class="relative z-10 px-6">
+      <h2 id="Page-Header" class="text-[4rem] text-[#222831] font-bold mb-4 font-[Nova_Round]">Welcome to Codewave</h2>
+      <p class="text-[2rem] text-[#d7d8ce] font-[Belanosima] max-w-2xl mx-auto">
         Empowering the next generation of developers through collaboration and innovation.
       </p>
-    </section>
+    </div>
+  </section>
+  <main class="container mx-auto py-10 px-6">
     <section class="py-16 text-center ">
       <h3 class="text-3xl font-semibold mb-8 text-[#00A6C0]">Our Programs</h3>
       <div class="grid md:grid-cols-2 gap-10">
         <div class="bg-[#283B48] p-6 rounded-lg shadow-md hover:shadow-lg transition">
+          <span class="relative flex size-3">
+            <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75"></span>
+            <span class="relative inline-flex size-3 rounded-full bg-sky-500"></span>
+          </span>
           <h4 class="text-xl font-semibold mb-3 text-[#00A6C0]">Formation</h4>
-          <p>Structured programs to develop your coding skills from beginner to expert.</p>
+          <p class="font-[Belanosima]">Structured programs to develop your coding skills from beginner to expert.</p>
         </div>
         <div class="bg-[#283B48] p-6 rounded-lg shadow-md hover:shadow-lg transition">
+          <span class="relative flex size-3">
+            <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75"></span>
+            <span class="relative inline-flex size-3 rounded-full bg-sky-500"></span>
+          </span>
           <h4 class="text-xl font-semibold mb-3 text-[#00A6C0]">Events & Workshops</h4>
-          <p>Engage with experts and peers through real-world coding challenges.</p>
+          <p class="font-[Belanosima]">Engage with experts and peers through real-world coding challenges.</p>
         </div>
       </div>
     </section>
-    <section class="py-16 bg-[#D8D7CE] text-[#222831] text-center rounded-lg shadow-md">
-      <h3 class="text-3xl font-semibold mb-4">About Us</h3>
-      <p class="max-w-2xl mx-auto">
+  </main>
+  <section
+    class="relative h-[80vh] flex flex-col justify-center items-center text-center text-[#D8D7CE] rounded-lg overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('public/School libriry.jpg');"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-[#283B48]/100 via-transparent to-[#283B48]/99"></div>
+
+    <div class="relative z-10 px-6 bg-[#283B48]/70 rounded-4xl p-8">
+      <h3 class="text-[4rem] font-[Nova_Round] mb-4 text-[#00A6C0]">About Us</h3>
+      <p class="max-w-2xl mx-auto font-[Belanosima] text-[2rem]">
         At Codewave, we’re passionate about building a vibrant tech community where learners and professionals grow
         together.
       </p>
-    </section>
-  </main>
+    </div>
+  </section>
+
+
+
   <footer class="bg-[#283B48] text-[#D8D7CE] p-8 flex flex-col md:flex-row justify-around items-start">
     <div class="mb-6 md:mb-0 ">
       <a href="Homepage.html" class="text-2xl sm:text-5xl font-bold text-[#00A6C0] hover:opacity-90">Codewave</a>

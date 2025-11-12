@@ -1,12 +1,20 @@
-const btn = document.getElementById("menu-btn");
-const menu = document.getElementById("menu");
 
-// btn.addEventListener("click", () => {
-//   menu.classList.toggle("hidden");
-// });
+document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+
 
 const divCOntainer = document.getElementById("containedivr");
 var formationData = [];
+
+    btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+    });
+    
+    
+
+})
+
 
 document.addEventListener("DOMContentLoaded", () => {
   let formationString = localStorage.getItem("formation");
