@@ -40,13 +40,14 @@
           <h3 class="font-bold text-blue-600 mt-[4%]">Create A new course</h3>
 
           <div class="">
-            <form action="">
+            <form id="SubmittingDataform">
               <div class="mt-[6%]">
                 <label for="Theme" class="mr-[2%]">Theme </label>
                 <input
                   type="text"
-                  name="Theme"
-                  class="border rounded h-8 pl-[5px]"
+                  name="theme"
+                  target="reding"
+                  class="inpuutt border rounded h-8 pl-[5px]"
                   placeholder=" Theme"
                   id="THEME"
                 />
@@ -55,8 +56,9 @@
                 <label for="Trainer" class="mr-[2%]">Trainer </label>
                 <input
                   type="text"
-                  name="Trainer"
-                  class="border rounded h-8 pl-[5px]"
+                  name="trainer"
+                  target="reding"
+                  class="inpuutt border rounded h-8 pl-[5px]"
                   placeholder=" Trainer name"
                   id="TRAINER"
                 />
@@ -66,16 +68,18 @@
                 <input
                   type="number"
                   id="durationTime"
-                  name="durationTime"
+                  name="duration"
+                  target="reding"
                   min="1"
-                  class="ss border rounded h-8 w-[40px] pl-[4px]"
+                  class="inpuutt ss  border rounded h-8 w-[40px] pl-[4px]"
               
                 />
                 <label for="capacity" class="mr-[2%]">Capacity </label>
                 <input
                   type="number"
                   name="capacity"
-                  class="border rounded h-8 w-[40px] pl-[4px]"
+                  target="reding"
+                  class="inpuutt border rounded h-8 w-[40px] pl-[4px]"
                   min="1"
                   max="60"
                   id="CAPACITY"
@@ -93,7 +97,8 @@
         </div>
       </section>
 
-      <div class="container grid lg:grid-cols-3 lg:w-[80%] lg:ml-[10%]" id="containedivr">
+      <!-- <div class="container grid lg:grid-cols-3 lg:w-[80%] lg:ml-[10%] " id="containedivr"> -->
+        <div class="container grid md:grid-cols-1 md:place-items-center lg:grid-cols-3 lg:w-[80%] lg:ml-[10%]" id="containedivr"></div>
         
       </div>
     </main>
